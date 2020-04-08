@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4eb9b082-db3e-436d-9eed-650899df6fc0" name="Default Changelist" comment="" />
+    <list default="true" id="4eb9b082-db3e-436d-9eed-650899df6fc0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../backend/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../backend/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/flaskr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/flaskr/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1ZfZJ2tVXMkJxvP1CmEr5SjEIaQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -17,6 +28,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
@@ -31,7 +48,8 @@
       <option name="presentableId" value="Default" />
       <updated>1585232033863</updated>
       <workItem from="1585232036370" duration="206000" />
-      <workItem from="1586253255723" duration="190000" />
+      <workItem from="1586253255723" duration="1469000" />
+      <workItem from="1586265273963" duration="101000" />
     </task>
     <servers />
   </component>
@@ -39,6 +57,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="737" y="300" width="424" height="520" key="FileChooserDialogImpl" timestamp="1586265354940">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="737" y="300" width="424" height="520" key="FileChooserDialogImpl/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586265354940" />
     <state width="1897" height="252" key="GridCell.Tab.0.bottom" timestamp="1585232241505">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
