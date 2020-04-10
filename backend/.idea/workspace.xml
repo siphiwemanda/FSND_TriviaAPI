@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec647ffb-7c74-45b9-bf56-876bf25d2564" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/components/QuizView.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/components/QuizView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,22 +50,35 @@
       <workItem from="1586263725660" duration="836000" />
       <workItem from="1586337496825" duration="6037000" />
       <workItem from="1586357346038" duration="153000" />
-      <workItem from="1586357524146" duration="2976000" />
+      <workItem from="1586357524146" duration="7175000" />
+      <workItem from="1586525067863" duration="603000" />
     </task>
+    <task id="LOCAL-00001" summary="Changed DB to local added get for categories">
+      <created>1586360759094</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586360759094</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed DB to local added get for categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed DB to local added get for categories" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="215" width="800" height="684" key="#Inspections" timestamp="1586263845897">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="555" y="215" width="800" height="684" key="#Inspections/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586263845897" />
-    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2" timestamp="1586358782686">
+    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2" timestamp="1586360758279">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586358782686" />
+    <state x="499" y="34" width="912" height="1045" key="CommitChangelistDialog2/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586360758279" />
     <state x="493" y="211" width="924" height="691" key="DBNavigator.ProjectSettingsDialog" timestamp="1586262358686">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -78,6 +87,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="312" y="259" width="1389" height="737" key="SettingsEditor/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586357899700" />
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1586360768182">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586360768182" />
     <state x="652" y="226" width="606" height="662" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586355777706">
       <screen x="0" y="27" width="3286" height="1053" />
     </state>

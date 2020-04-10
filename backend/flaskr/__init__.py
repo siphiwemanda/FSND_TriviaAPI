@@ -34,10 +34,8 @@ def create_app(test_config=None):
     def hello():
         return jsonify({'message': 'Hello World!'})
 
-
-
     '''
-  @TODO: 
+  @TODO: app
   Create an endpoint to handle GET requests 
   for all available categories.
   '''
@@ -45,13 +43,11 @@ def create_app(test_config=None):
     @app.route('/categories')
     def get_categories():
         categories = Category.query.all()
-        formatted_categories =[categorise.format() for categorise in categories]
+        formatted_categories = [categorise.format() for categorise in categories]
         return jsonify({
             'message': True,
             'categories': formatted_categories
         })
-
-
 
     '''
   @TODO: 
@@ -65,6 +61,19 @@ def create_app(test_config=None):
   ten questions per page and pagination at the bottom of the screen for three pages.
   Clicking on the page numbers should update the questions. 
   '''
+
+    @app.route('/questions')
+    def get_questions():
+        page = request.args.get('page', 1, type=int)
+        start = (page - 1) * QUESTIONS_PER_PAGE
+        end = start + QUESTIONS_PER_PAGE
+        questions = Question.query.all()
+        formatted_questions = [question.format() for question in questions]
+        return jsonify({
+            'message': True,
+            'questions': formatted_questions[start:end],
+            'total_questions': len(formatted_questions)
+        })
 
     '''
   @TODO: 
