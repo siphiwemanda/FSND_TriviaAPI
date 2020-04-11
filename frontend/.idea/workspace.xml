@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/flaskr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/flaskr/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/QuizView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuizView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +50,7 @@
       <workItem from="1586377022838" duration="2146000" />
       <workItem from="1586531003536" duration="3412000" />
       <workItem from="1586552156898" duration="853000" />
+      <workItem from="1586607634462" duration="811000" />
     </task>
     <servers />
   </component>
