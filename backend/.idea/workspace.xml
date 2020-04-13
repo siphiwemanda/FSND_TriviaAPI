@@ -19,9 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec647ffb-7c74-45b9-bf56-876bf25d2564" name="Default Changelist" comment="More end points">
+    <list default="true" id="ec647ffb-7c74-45b9-bf56-876bf25d2564" name="Default Changelist" comment="updated get questions end point">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_flaskr.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_flaskr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +52,28 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.mallowigi.config" />
   </component>
+  <component name="RunManager">
+    <configuration name="Unittests in test_flaskr.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_flaskr.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in test_flaskr.py" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -68,7 +91,8 @@
       <workItem from="1586337496825" duration="6037000" />
       <workItem from="1586357346038" duration="153000" />
       <workItem from="1586357524146" duration="7175000" />
-      <workItem from="1586525067863" duration="12562000" />
+      <workItem from="1586525067863" duration="17013000" />
+      <workItem from="1586777236796" duration="1379000" />
     </task>
     <task id="LOCAL-00001" summary="Changed DB to local added get for categories">
       <created>1586360759094</created>
@@ -91,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586609348845</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated get questions end point">
+      <created>1586610731493</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1586610731493</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,12 +138,14 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed DB to local added get for categories" />
     <MESSAGE value="add first APi get categories and get question" />
     <MESSAGE value="More end points" />
-    <option name="LAST_COMMIT_MESSAGE" value="More end points" />
+    <MESSAGE value="updated get questions end point" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated get questions end point" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="215" width="800" height="684" key="#Inspections" timestamp="1586263845897">
@@ -127,14 +160,30 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="493" y="211" width="924" height="691" key="DBNavigator.ProjectSettingsDialog/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586262358686" />
+    <state width="1874" height="266" key="GridCell.Tab.0.bottom" timestamp="1586777212352">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="266" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586777212352" />
+    <state width="1874" height="266" key="GridCell.Tab.0.center" timestamp="1586777212352">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="266" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586777212352" />
+    <state width="1874" height="266" key="GridCell.Tab.0.left" timestamp="1586777212352">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="266" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586777212352" />
+    <state width="1874" height="266" key="GridCell.Tab.0.right" timestamp="1586777212352">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1874" height="266" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586777212352" />
     <state x="312" y="259" width="1389" height="737" key="SettingsEditor" timestamp="1586357899700">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="312" y="259" width="1389" height="737" key="SettingsEditor/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586357899700" />
-    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1586609353074">
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1586610736703">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586609353074" />
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586610736703" />
     <state x="652" y="226" width="606" height="662" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586355777706">
       <screen x="0" y="27" width="3286" height="1053" />
     </state>
@@ -143,5 +192,12 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="693" y="211" width="513" height="697" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586358740287" />
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1586776677058">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="259" width="672" height="678" key="search.everywhere.popup/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586776677058" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/backend$Unittests_in_test_flaskr_py.coverage" NAME="Unittests in test_flaskr.py Coverage Results" MODIFIED="1586776843498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
