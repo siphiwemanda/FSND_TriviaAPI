@@ -7,7 +7,7 @@ database_name = "trivia"
 password = "pass"
 database_path = 'postgresql://postgres:pass@localhost:5432/trivia'
 
-#database_path = "postgres://{}:{}@{}/{}".format('postgres', 'password, localhost:5432', database_name)
+# database_path = "postgres://{}:{}@{}/{}".format('postgres', 'password, localhost:5432', database_name)
 
 db = SQLAlchemy()
 

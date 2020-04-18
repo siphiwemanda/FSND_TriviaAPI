@@ -4,7 +4,10 @@
     <list default="true" id="4eb9b082-db3e-436d-9eed-650899df6fc0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/flaskr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/flaskr/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/test_flaskr.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/test_flaskr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/QuestionView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuestionView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,11 @@
       <workItem from="1586531003536" duration="3412000" />
       <workItem from="1586552156898" duration="853000" />
       <workItem from="1586607634462" duration="2776000" />
-      <workItem from="1586775684760" duration="689000" />
+      <workItem from="1586775684760" duration="3046000" />
+      <workItem from="1587030099377" duration="142000" />
+      <workItem from="1587030261492" duration="620000" />
+      <workItem from="1587211732270" duration="146000" />
+      <workItem from="1587212233442" duration="826000" />
     </task>
     <servers />
   </component>

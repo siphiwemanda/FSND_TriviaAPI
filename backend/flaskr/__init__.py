@@ -26,13 +26,7 @@ def create_app(test_config=None):
     setup_db(app)
     CORS(app)
 
-    '''
-  @TODO: Set up CORS. Allow '*' for origins. Delete the sample route after completing the TODOs
-  '''
     CORS(app, resources={'/': {'origins': '*'}})
-    '''
-  @TODO: Use the after_request decorator to set Access-Control-Allow
-  '''
 
     @app.after_request
     def after_request(response):
@@ -46,12 +40,6 @@ def create_app(test_config=None):
     @app.route('/')
     def hello():
         return jsonify({'message': 'Hello World!'})
-
-    '''
-  @TODO: app
-  Create an endpoint to handle GET requests 
-  for all available categories.
-  '''
 
     @app.route('/categories')
     def get_categories():
@@ -123,7 +111,6 @@ def create_app(test_config=None):
             return jsonify({
                 'success': True,
                 'deleted': id,
-
             })
         except:
             abort(422)
@@ -142,33 +129,36 @@ def create_app(test_config=None):
     @app.route('/questions', methods=['POST'])
     def create_question():
         body = request.get_json()
-
         if body.get('searchTerm'):
             search_term = body.get('searchTerm')
-        selection = Question.query.filter(Question.question.ilike(f'%{search_term}%')).all()
 
-        if len(selection) == 0:
-            abort(404)
-
-        new_question = body.get('question', None)
-        new_answer = body.get('answer', None)
-        category = body.get('category', None)
-        difficulty = body.get('difficulty', None)
-
-        try:
-            question = Question(question=new_question, answer=new_answer, category=category, difficulty=difficulty)
-            question.insert()
-
-            selection = Question.query.order_by(Question.id).all()
-            current_question = paginate_questions(request, selection)
+            selection = Question.query.filter(Question.question.ilike('%' + search_term + '%')).all()
+            paginate = paginate_questions(request, selection)
             return jsonify({
                 'success': True,
-                'created': Question.id,
-                'questions': current_question,
-                'total_questions': len(Question.queryd.all())
+                'questions': paginate,
+                'total_questions': len(Question.query.all())
             })
-        except:
-            abort(422)
+        else:
+            new_question = body.get('question')
+            new_answer = body.get('answer')
+            new_category = body.get('category')
+            new_difficulty = body.get('difficulty')
+
+            if new_answer is None or new_question is None or new_category is None or new_difficulty is None:
+                abort(422)
+            try:
+
+                question = Question(question=new_question, answer=new_answer, category=new_category,
+                                    difficulty=new_difficulty)
+                question.insert()
+
+                return jsonify({
+                    'success': True,
+                    'created': question.id,
+                })
+            except:
+                abort(422)
 
     '''
   @TODO: 
@@ -224,11 +214,11 @@ def create_app(test_config=None):
 
         body = request.get_json()
 
-        previous = body.get('previous_questions')
+        previous_questions = body.get('previous_questions')
 
         category = body.get('quiz_category')
 
-        if (category is None) or (previous is None):
+        if (category is None) or (previous_questions is None):
             abort(400)
 
         if category['id'] == 0:
@@ -243,8 +233,8 @@ def create_app(test_config=None):
 
         def check_if_used(question):
             used = False
-            for q in previous:
-                if q == question.id:
+            for previous_question in previous_questions:
+                if previous_question == question.id:
                     used = True
 
             return used
@@ -254,7 +244,7 @@ def create_app(test_config=None):
         while check_if_used(question):
             question = get_random_question()
 
-            if len(previous) == total:
+            if len(previous_questions) == total:
                 return jsonify({
                     'success': True
                 })
@@ -263,12 +253,6 @@ def create_app(test_config=None):
             'success': True,
             'question': question.format()
         })
-
-    '''
-  @TODO: 
-  Create error handlers for all expected errors 
-  including 404 and 422. 
-  '''
 
     @app.errorhandler(404)
     def not_found(error):
