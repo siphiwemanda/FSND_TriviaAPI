@@ -33,8 +33,8 @@ class TriviaTestCase(unittest.TestCase):
         }
 
         self.add_question_notright = {
-            "question": "should not work this unit test work",
-            "answer": "opps",
+            "question": "",
+            "answer": "",
             "category": 1,
             "difficulty": 5
         }
@@ -79,14 +79,19 @@ class TriviaTestCase(unittest.TestCase):
                                               '6': 'Sports'})
 
     def test_delete_question(self):
-        response = self.client().delete('/questions/25')
+        # create a question to be deleted, stops it having to be changed all the time
+        question = Question(question=self.add_question['question'], answer=self.add_question['answer'],
+                            category=self.add_question['category'], difficulty=self.add_question['difficulty'])
+        question.insert()
+        # store the new questions id
+        question_delete = question.id
+        response = self.client().delete('/questions/{}'.format(question_delete))
         data = json.loads(response.data)
-
-        question = Question.query.filter(Question.id == 25).one_or_none()
+        question = Question.query.filter(Question.id == question_delete).one_or_none()
 
         self.assertEqual(response.status_code, 200)
         self.assertEqual(data['success'], True)
-        self.assertEqual(data['deleted'], 20)
+        self.assertEqual(data['deleted'], question_delete)
         self.assertEqual(question, None)
 
     def test_delete_question_does_not_exist(self):
@@ -99,13 +104,12 @@ class TriviaTestCase(unittest.TestCase):
     def test_create_questions(self):
         response = self.client().post('/questions', json=self.add_question)
         data = json.loads(response.data)
-        created_question = response.data
         self.assertEqual(response.status_code, 200)
         self.assertEqual(data['success'], True)
         self.assertTrue(data['created'])
 
     def test_create_questions_fails(self):
-        response = self.client().post('/questions', json={})
+        response = self.client().post('/questions', json=self.add_question_notright)
         data = json.loads(response.data)
         self.assertEqual(response.status_code, 422)
         self.assertEqual(data['success'], False)

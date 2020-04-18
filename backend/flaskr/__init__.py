@@ -145,8 +145,11 @@ def create_app(test_config=None):
             new_category = body.get('category')
             new_difficulty = body.get('difficulty')
 
-            if new_answer is None or new_question is None or new_category is None or new_difficulty is None:
+            if new_question=="" or new_answer=="":
+                print("not aborting")
                 abort(422)
+
+
             try:
 
                 question = Question(question=new_question, answer=new_answer, category=new_category,
