@@ -52,7 +52,7 @@ def create_app(test_config=None):
             abort(404)
 
         return jsonify({
-            'message': True,
+            'success': True,
             'categories': categories_dictionary
         })
 
@@ -84,7 +84,7 @@ def create_app(test_config=None):
             abort(404)
 
         return jsonify({
-            'message': True,
+            'success': True,
             'questions': current_questions,
             'total_questions': total_questions,
             'categories': categories_dictionary
@@ -259,7 +259,8 @@ def create_app(test_config=None):
         return jsonify({
             "success": False,
             "error": 404,
-            "message": "Not Found"
+            "message": "resource not found"
+
         }), 404
 
     @app.errorhandler(422)

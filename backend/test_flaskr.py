@@ -25,6 +25,13 @@ class TriviaTestCase(unittest.TestCase):
             # create all tables
             self.db.create_all()
 
+        self.add_question = {
+            "question": "Does this unit test work",
+            "answer": "Maybe",
+            "category": 1,
+            "difficulty": 5
+        }
+
     def tearDown(self):
         """Executed after reach test"""
         pass
@@ -34,7 +41,7 @@ class TriviaTestCase(unittest.TestCase):
     Write at least one test for each test for successful operation and for expected errors.
     """
 
-    def test_get_paginated_questions(self):
+    def test_paginated_questions(self):
         response = self.client().get('/questions')
         data = json.loads(response.data)
         self.assertEqual(response.status_code, 200)
@@ -50,16 +57,12 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(data['message'], 'resource not found')
 
     def test_get_questions_by_category(self):
-        response = self.client().get('/categories/1/questions')
-
+        response = self.client().get('/categories/5/questions')
         data = json.loads(response.data)
-
         self.assertEqual(response.status_code, 200)
         self.assertEqual(data['success'], True)
-
         self.assertNotEqual(len(data['questions']), 0)
-
-        self.assertEqual(data['current_category'], 'Science')
+        self.assertEqual(data['current_category'], 'Entertainment')
 
 
 # Make the tests conveniently executable
