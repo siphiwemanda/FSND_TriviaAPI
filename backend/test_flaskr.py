@@ -4,7 +4,7 @@ import unittest
 from flask_sqlalchemy import SQLAlchemy
 
 from flaskr import create_app
-from models import setup_db
+from models import setup_db, Question, Category
 
 
 class TriviaTestCase(unittest.TestCase):
@@ -36,11 +36,6 @@ class TriviaTestCase(unittest.TestCase):
         """Executed after reach test"""
         pass
 
-    """
-    TODO
-    Write at least one test for each test for successful operation and for expected errors.
-    """
-
     def test_paginated_questions(self):
         response = self.client().get('/questions')
         data = json.loads(response.data)
@@ -63,6 +58,71 @@ class TriviaTestCase(unittest.TestCase):
         self.assertEqual(data['success'], True)
         self.assertNotEqual(len(data['questions']), 0)
         self.assertEqual(data['current_category'], 'Entertainment')
+
+    def test_get_categories(self):
+        response = self.client().get('/categories')
+        data = json.loads(response.data)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(data['success'], True)
+        self.assertEqual(data['categories'], {'1': 'Science',
+                                              '2': 'Art',
+                                              '3': 'Geography',
+                                              '4': 'History',
+                                              '5': 'Entertainment',
+                                              '6': 'Sports'})
+
+    def test_delete_question(self):
+        response = self.client().delete('/questions/30')
+        data = json.loads(response.data)
+
+        question = Question.query.filter(Question.id == 4).one_or_none()
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(data['success'], True)
+        self.assertEqual(data['deleted'], 20)
+        self.assertEqual(question, None)
+
+    def test_delete_question_does_not_exist(self):
+        response = self.client().delete('/questions/600')
+        data = json.loads(response.data)
+        self.assertEqual(response.status_code, 422)
+        self.assertEqual(data['success'], False)
+        self.assertEqual(data['message'], 'unprocessable')
+
+    def test_create_questions(self):
+        response = self.client().post('/questions', json=self.add_question)
+
+        data = json.loads(response.data)
+        created_question = response.data
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(data['success'], True)
+        self.assertTrue(data['created'])
+
+    def test_create_questions_not_allowed(self):
+        response = self.client().post('/questions/500', json=self.add_question)
+        data = json.loads(response.data)
+        self.assertEqual(response.status_code, 405)
+        self.assertEqual(data['success'], False)
+        self.assertEqual(data['message'], 'Method not allowed')
+
+    def test_search_questions(self):
+        response = self.client().post('/questions', json={'searchTerm': 'Bird'})
+        data = json.loads(response.data)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(data['success'], True)
+        self.assertTrue(data['total_questions'])
+        self.assertTrue(len(data['questions']))
+
+    def test_play(self):
+        response = self.client().post('/quizzes', json={'previous_questions': [10, 11],
+                                                        'quiz_category': {'type': 'History', 'id': '4'}})
+        data = json.loads(response.data)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(data['success'], True)
+        self.assertTrue(data['question'])
+        self.assertEqual(data['question']['category'], 4)
+        self.assertNotEqual(data['question']['id'], 10)
+        self.assertNotEqual(data['question']['id'], 11)
 
 
 # Make the tests conveniently executable
