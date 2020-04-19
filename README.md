@@ -58,7 +58,7 @@ The Api will return the following errors
 ##End Points
 #### **Get/categories**
 * returns a list of categories
-* sample: curl http://127.0.0.1:5000/categories
+* sample: ``curl http://127.0.0.1:5000/categories``
 ```
 {
   "categories": {
@@ -75,7 +75,7 @@ The Api will return the following errors
 #### **Get/questions**
 * returns a list of question objects, success value, total number of questions and categories
 * results are paginated to 10 questions per page 
-* sample: curl  http://127.0.0.1:5000/questions
+* sample: curl  `http://127.0.0.1:5000/questions`
 ```
 {
   "categories": {
@@ -164,7 +164,7 @@ The Api will return the following errors
 ```
 #### Delete/questions/{question_id}
 * Deletes a book of the given id
-* sample: curl -X DELETE  http://127.0.0.1:5000/questions/1
+* sample: `curl -X DELETE  http://127.0.0.1:5000/questions/1`
 ```
 {
 deleted: 130
@@ -278,7 +278,7 @@ Adding a question returns
 #### GET/catagories/{id}/questions
 * reruns a list of questions based on the matching category id 
 
-sample: curl http://127.0.0.1:5000/categories/5/questions
+sample: `curl http://127.0.0.1:5000/categories/5/questions`
 
 ```
 {
