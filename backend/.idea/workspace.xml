@@ -24,9 +24,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec647ffb-7c74-45b9-bf56-876bf25d2564" name="Default Changelist" comment="Fixed questions by category bug, fixed img not showing on front end, fixed all unit test">
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    <list default="true" id="ec647ffb-7c74-45b9-bf56-876bf25d2564" name="Default Changelist" comment="Added README API documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +168,7 @@
       <workItem from="1587215942799" duration="11138000" />
       <workItem from="1587241679943" duration="8553000" />
       <workItem from="1587290652742" duration="5413000" />
-      <workItem from="1587300316415" duration="6088000" />
+      <workItem from="1587300316415" duration="8514000" />
     </task>
     <task id="LOCAL-00001" summary="Changed DB to local added get for categories">
       <created>1586360759094</created>
@@ -246,7 +247,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587303212893</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added README API documentation">
+      <created>1587306663892</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587306663892</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added README API documentation">
+      <created>1587306786370</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1587306786370</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +292,8 @@
     <MESSAGE value="unit test working" />
     <MESSAGE value="Fixed questions by catagory bug, fixed img not showing on front end" />
     <MESSAGE value="Fixed questions by category bug, fixed img not showing on front end, fixed all unit test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed questions by category bug, fixed img not showing on front end, fixed all unit test" />
+    <MESSAGE value="Added README API documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added README API documentation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="215" width="800" height="684" key="#Inspections" timestamp="1586263845897">
@@ -354,10 +370,10 @@
     </state>
     <state x="222" y="31" width="989" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1587244103853" />
     <state x="312" y="259" width="1389" height="737" key="SettingsEditor/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1586357899700" />
-    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1587303223653">
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1587306789671">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1587303223653" />
+    <state x="555" y="285" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1587306789671" />
     <state x="652" y="226" width="606" height="662" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586355777706">
       <screen x="0" y="27" width="3286" height="1053" />
     </state>

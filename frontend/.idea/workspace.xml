@@ -4,14 +4,7 @@
     <list default="true" id="4eb9b082-db3e-436d-9eed-650899df6fc0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../backend/flaskr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/flaskr/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/test_flaskr.py" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/test_flaskr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/art.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Art.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/entertainment.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Entertainment.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/geography.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Geography.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/history.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/History.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/science.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Science.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/sports.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Sports.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +59,8 @@
       <workItem from="1587213515640" duration="623000" />
       <workItem from="1587242216032" duration="1481000" />
       <workItem from="1587284848877" duration="866000" />
-      <workItem from="1587290523847" duration="639000" />
+      <workItem from="1587290523847" duration="1300000" />
+      <workItem from="1587307113764" duration="637000" />
     </task>
     <servers />
   </component>

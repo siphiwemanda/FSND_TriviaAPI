@@ -170,25 +170,25 @@ def create_app(test_config=None):
         else:
             questions = Question.query.filter_by(category=category['id']).all()
 
-        total = len(questions)
+        num_questions = len(questions)
 
         def get_random_question():
-            return questions[random.randrange(0, len(questions), 1)]
+            return questions[random.randrange(0, num_questions, 33)]
 
-        def check_if_used(question):
-            used = False
+        def used(question_id):
+            used_flag = False
             for previous_question in previous_questions:
-                if previous_question == question.id:
-                    used = True
+                if previous_question == question_id.id:
+                    used_flag = True
 
-            return used
+            return used_flag
 
         question = get_random_question()
 
-        while check_if_used(question):
+        while used(question):
             question = get_random_question()
 
-            if len(previous_questions) == total:
+            if len(previous_questions) == num_questions:
                 return jsonify({
                     'success': True
                 })
